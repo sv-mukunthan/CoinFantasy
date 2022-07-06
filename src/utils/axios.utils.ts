@@ -1,18 +1,14 @@
-import axios from "axios"
-import { Functions } from "./imports.utils"
+import axios from 'axios';
+import Functions from './functions.utils';
 // import AsyncStorage from "@react-native-community/async-storage"
 
-let token = localStorage.getItem("token")
+let token = localStorage.getItem('token');
 export const instance = () => {
   const data = axios.create({
-  baseURL: Functions.getBaseURL()+"/api/v1/",
-    headers: {
-        "authorization" :token || ""
-  }
-})
-return data
-}
-
+    baseURL: process.env.REACT_APP_API,
+  });
+  return data;
+};
 
 // export const instance = () => {
 //   const data = axios.create({
@@ -26,4 +22,4 @@ return data
 //   return data
 // }
 
-export default instance
+export default instance;

@@ -1,10 +1,9 @@
 import test from 'models/test.model';
-import user from 'models/user.model';
+import coin from 'models/coin.model';
 
-
-export const Models = {
+const Models = {
   test,
-  user,
+  coin,
 };
 
 export default Models;

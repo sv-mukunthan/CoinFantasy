@@ -1,4 +1,3 @@
-import auth from 'models/auth.model';
 import React from 'react';
 import { useSetState } from 'utils/functions.utils';
 function Login() {
@@ -6,10 +5,10 @@ function Login() {
   const [state, setState] = useSetState({ email: "", password: "" });
 
   const Login = async () => {
-    const user: any = await auth.login(state);
-    localStorage.setItem("user", user.data._id);
-    localStorage.setItem("token", user.token);
-    window.location.href = "/conversation";
+    // const user: any = await auth.login(state);
+    // localStorage.setItem("user", user.data._id);
+    // localStorage.setItem("token", user.token);
+    // window.location.href = "/conversation";
   }
 
   return (
