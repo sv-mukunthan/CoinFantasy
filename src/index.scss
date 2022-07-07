@@ -1,3 +1,6 @@
+$primaryColor: #7425E2;
+$boxBorder: #777E90;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -12,6 +15,62 @@ code {
     monospace;
 }
 
-*{
+* {
   box-sizing: border-box;
+}
+
+.head1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.head2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+.head3 {
+  font-weight: bold;
+  font-size: 18.72px;
+}
+.head4 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.head5 {
+  font-weight: bold;
+  font-size: 13.28px;
+}
+.head6 {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.para1 {
+  font-size: 32px;
+  font-style: normal;
+}
+.para2 {
+  font-style: normal;
+  font-size: 24px;
+}
+.para3 {
+  font-style: normal;
+  font-size: 18.72px;
+}
+.para4 {
+  font-style: normal;
+  font-size: 16px;
+}
+.para5 {
+  font-style: normal;
+  font-size: 13.28px;
+}
+.para6 {
+  font-style: normal;
+  font-size: 12px;
+}
+
+.green_text {
+  color: #30AF9A;
+  font-weight: 600;
+  font-size: 18px;
 }
