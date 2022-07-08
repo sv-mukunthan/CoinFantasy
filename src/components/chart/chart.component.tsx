@@ -111,7 +111,7 @@ const ChartComponent = (props: IChart) => {
         crosshairs: {
           show: false,
         },
-        categories: category,
+        // categories: category,
       },
       yaxis: {
         labels: {
@@ -120,11 +120,20 @@ const ChartComponent = (props: IChart) => {
       },
       tooltip: {
         custom: function ({ series, seriesIndex, dataPointIndex, w }) {
-          console.log('w', w);
           var data = w.globals.initialSeries[seriesIndex].data[dataPointIndex];
-
+          var d = new Date(data[0]);
+          let hour = d.getHours();
           return `<div class="tool_tip_popup">
-              <div>${moment.unix(data).toDate()}</div>
+              <div class="tooltip_head">${
+                ('0' + d.getDate()).slice(-2) +
+                ' ' +
+                d.toLocaleString('default', { month: 'long' }) +
+                ' ' +
+                d.getFullYear()
+              }</div>
+              <div class="tooltip_time head4">${
+                d.getHours() + ':' + d.getMinutes()
+              } ${hour >= 12 ? 'pm' : 'am'}</div>
             </div>`;
         },
       },

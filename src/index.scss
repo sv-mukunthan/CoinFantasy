@@ -1,5 +1,5 @@
-$primaryColor: #7425E2;
-$boxBorder: #777E90;
+$primaryColor: #7425e2;
+$boxBorder: #777e90;
 
 body {
   margin: 0;
@@ -70,7 +70,13 @@ code {
 }
 
 .green_text {
-  color: #30AF9A;
+  color: #30af9a;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.red_text {
+  color: red;
   font-weight: 600;
   font-size: 18px;
 }

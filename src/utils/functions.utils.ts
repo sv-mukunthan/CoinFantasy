@@ -117,6 +117,18 @@ const getTimeStamp = (find, value) => {
   }
 };
 
+const formatPersentage = (num) => {
+  return `${new Number(num).toFixed(2)}%`;
+};
+
+const formatDoller = (number, digits) => {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'usd',
+    minimumSignificantDigits: digits,
+  }).format(number);
+};
+
 const Functions = {
   useSetState,
   getBaseURL,
@@ -126,6 +138,8 @@ const Functions = {
   Info,
   Warning,
   getTimeStamp,
+  formatPersentage,
+  formatDoller,
 };
 
 export default Functions;

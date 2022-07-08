@@ -36,7 +36,7 @@ const Coin = {
       instance()
         .post(`/coin-list/market_chart`, data)
         .then((coins) => {
-          resolve(coins);
+          resolve(coins.data.data);
         })
         .catch((error) => {
           if (error.response) {

@@ -18,4 +18,14 @@
   padding: 1em;
   border: 1px solid $primaryColor;
   border-radius: 6px;
+  width: 120px;
+
+  .tooltip_head {
+    font-size: 15px;
+  }
+
+  .tooltip_time {
+    text-align: center;
+    padding: 0.2em 0;
+  }
 }
