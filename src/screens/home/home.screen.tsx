@@ -95,7 +95,7 @@ const Home = (props: any) => {
                     className={`${
                       state.persentage24 > 0 ? 'green_text' : 'red_text'
                     }`}>
-                    {state.persentage24 > 0 ? '+' : '-'}
+                    {state.persentage24 > 0 && '+'}
                     {Functions.formatPersentage(state.persentage24)}
                   </span>
                 </div>
